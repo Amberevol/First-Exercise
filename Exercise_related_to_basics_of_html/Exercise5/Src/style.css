@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: peachpuff;
+    padding: 25px;
+    margin: 20px;
+}
+
+#h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    top: 6rem;
+}
+
+.para_container{
+    position: relative;
+    bottom: 21rem;
+}
+
+.list_container{
+position: relative;
+bottom: 20rem;
+width: fit-content;
+display: flex;
+background-color: burlywood;
+height: fit-content;
+}
+
+.img_container{
+    position: absolute;
+    top: 18rem;
+}
+
+#naruto{
+    height: 21rem;
+}
+
+.next_page{
+    position: absolute;
+    top: 40rem;
+}
