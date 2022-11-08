@@ -1,0 +1,28 @@
+.centered
+{
+    display: flex;
+text-align: center;
+margin: 64px auto; /* top and bottom margins are set,
+right and left margins are automatic */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: rgb(251, 241, 133);
+}
+
+.btn{
+    color: white;
+    border-radius: 27px;
+    background-color: red;
+    margin: 13px 22px 20px 39px;
+    height: 40px;
+}
+
+.btn:hover{
+    background-color: goldenrod;
+}

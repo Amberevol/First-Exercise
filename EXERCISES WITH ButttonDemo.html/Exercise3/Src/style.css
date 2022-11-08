@@ -1,0 +1,10 @@
+.centered
+{
+text-align: center;
+margin: 64px auto; /* top and bottom margins are set,
+right and left margins are automatic */
+}
+
+body{
+    background-color: rgb(251, 241, 133);
+}
