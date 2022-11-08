@@ -1,0 +1,11 @@
+.centered
+{
+text-align: center;
+margin: 16px auto; /* top and bottom margins are set,
+right and left margins are automatic */
+}
+
+#image_element_id{
+    width: 1000px;
+    height: auto;
+}

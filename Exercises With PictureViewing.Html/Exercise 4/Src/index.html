@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PictureViewing.html by Kari Laitinen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class=centered>
+        <button onclick="show_next_picture()">Next</button>
+        <button onclick="showPreviousPicture()">Previous</button>
+    </div>
+    <div class=centered>
+        <img id="image_element_id" src="images/buggati.jpg" width=800>
+        <div class="centered">
+            <mark id="image_text">Buggati veyron Supersport W16</mark> <br> <br>
+            <button onclick="zoomIn()">Zoom In(+)</button>
+            <button onclick="zoomOut()">Zoom Out(-)</button>
+        </div>
+    </div>
+</body>
