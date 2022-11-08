@@ -1,0 +1,14 @@
+
+
+   #centered
+   {
+      width: 880px;
+      height: 620px;
+      margin: 30px auto;    /* top and bottom margins are set
+                               right and left margins are automatic */
+      border: 1px solid black;
+   }
+
+/* canvas :hover{
+   color: aqua;
+} */
