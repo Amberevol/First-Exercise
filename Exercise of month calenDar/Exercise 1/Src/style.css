@@ -1,0 +1,95 @@
+
+body
+{
+    background: #EEEEEE;
+}
+
+#calendar_area
+{
+   width:  480px;
+
+   margin:  128px auto;    /* top and bottom margins are set,
+                              right and left margins are automatic */
+}
+
+#relatively_positioned_buttons
+{
+   width: 480px ;
+   position: relative ;
+   top: 36px ;
+   text-align: right ;
+}
+
+button
+{
+   width:  32px ;
+   height: 28px ;
+   font-size: 18px ;
+   color: Black ;     /* text color on the button. */
+   background-color: #DA7B06 ;
+}
+
+button:hover       /* When the mouse cursor is hovering over the button ... */
+{
+    color: Snow ;    /* ... the button text color changes. */
+}
+
+
+table
+{
+   width:  100% ;    /* The table will fill the enclosing element. */
+
+   table-layout: fixed ;  /* This makes equal column widths. */
+
+   font-family: monospace ;  /* Characters will have equal widths. */
+   font-size: 150% ;
+}
+
+caption
+{
+   text-align: left ;
+   font-size: 150% ;
+   font-family: sans-serif ;
+   color: OrangeRed ;
+}
+
+td, th   /* The <td> and <th> elements are the cells of a table. */
+{
+   text-align: center ;
+   padding: 12px ;
+}
+
+th
+{
+   background-color: #9ce966 ;
+} 
+
+td
+{
+   background-color: #e5502e;
+} 
+
+/* The following definitions specify that when the mouse cursor is moved
+   over a <td> element in the table, the text color and background color
+   will change. However, this will not happen if the id of the
+   element is week_number. */
+
+td:not(#week_number):hover
+{
+   color: OrangeRed ;
+   background-color: LightGray ;
+}
+
+td#week_number  /* Week numbers in the table are shown with different color. */
+{
+   color: Gray ;
+}
+
+/* The JavaScript method that creates the calendar table automatically 
+   equips the <td> element that contains the current day with id=current_day. */
+
+td#current_day
+{
+   background-color: LightGreen ;
+}
+
