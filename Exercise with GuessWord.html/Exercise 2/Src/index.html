@@ -1,0 +1,46 @@
+<html>
+
+<head>
+   <meta charset="ISO-8859-1">
+   <title>GuessAWord.html © Kari Laitinen</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+
+</head>
+
+<body>
+
+   <div class="centered">
+      <br>&nbsp;
+      <!-- Make some extra space before anyting else. -->
+      <p>Each hyphen sign '-' below hides a letter of a word.</p>
+      <p>Try to find out the word by pressing the buttons!</p>
+   </div>
+
+   <h1 id="secret_word_text_id" class="centered">------</h1>
+
+   <div class="centered">
+
+      <script>
+
+         // Here we have JavaScript code inside an HTML <div> element.
+         // This JavaScript code is executed at the place where it is located.
+         // This generates the buttons that contain letters as their texts.
+
+         var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+            'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'V', 'W',
+            'X', 'Y', 'Z'];
+
+         for (var letter_index = 0; letter_index < letters.length; letter_index++) {
+            document.write("<button id=\"btn\" onclick= \"handle_button_press(this)\">" + letters[letter_index] + "</button>");
+
+         }
+
+         document.getElementById("secret_word_text_id").innerHTML =  guessed_characters.join("");
+
+      </script> <br> 
+      <h2 id="number_of_press"> 0 </h2>
+   </div>
+</body>
+
+</html>
