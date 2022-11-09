@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script> 
+</head>
+<body>
+    <div id="centered_container">
+
+        <div id="centered_ui_components">
+           <!-- With the <button> tag we can define buttons and specify the methods
+                that will be called when the buttons are pressed. Buttons
+                could alternatively be defined with the <input> tag.
+  
+                In HTML we must write &lt; and &gt; in order to produce the
+                characters < and >, i.e., 'less than' and 'greater than'. -->
+  
+           <button onclick="left_button_clicked()">  &lt;  </button>
+           <button onclick="down_button_clicked()"> Down </button>
+           <button onclick="up_button_clicked()">  Up  </button>
+           <button onclick="right_button_clicked()">  &gt;  </button>
+           <button onclick="reset()"> Reset  </button>
+           <button onclick="larger()"> Larger  </button>
+           <button onclick="smaller()"> Smaller  </button>
+  
+           <!-- With the <select> tag we create a drop-down list. The selectable
+                options are defined with the <option> tag. The method 
+                change_rectangle_color() will be called automatically when the user
+                makes a selection. -->
+  
+           <select id="color_selection_list" onchange="change_rectangle_color()">
+              <option selected="">Red</option>
+              <option>Green</option>
+              <option>Blue</option>
+              <option>Yellow</option>
+              <option>Magenta</option>
+              <option>Cyan</option>
+              <option>White</option>
+              <option>Khaki</option>
+              <option>Gray</option>
+              <option>Olive</option>
+              <option>lawn Green</option>
+           </select>
+  
+        </div> <!-- end of centered_ui_components -->
+  
+        <!-- The content of the following <div> is empty as its properties are
+             specified with a CSS definition. -->
+  
+        <div id="moving_rectangle" style="top: 180px;">
+        </div>
+  
+     </div>
+    
+</body>
+</html>
