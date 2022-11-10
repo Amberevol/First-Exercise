@@ -1,0 +1,8 @@
+#centered
+{
+   width:  800px;
+   height: 600px;
+   margin: 30px auto;    /* top and bottom margins are 30p;
+                            right and left margins are automatic */
+   border: 1px solid black;
+}
